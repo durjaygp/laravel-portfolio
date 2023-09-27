@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Kristi&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('frontEnd')}}/css/plugins.css" />
     <link rel="stylesheet" type="text/css" href="{{asset('frontEnd')}}/css/style.css" />
+    <link rel="shortcut icon" href="{{asset('personal_image/hero.webp')}}" type="image/x-icon">
 </head>
 <body>
 
-<div id="preloader">
-    <div class="loader_line"></div>
-</div>
+{{--<div id="preloader">--}}
+{{--    <div class="loader_line"></div>--}}
+{{--</div>--}}
 
 
 <div class="elisc_tm_all_wrap" data-magic-cursor="show">
@@ -25,8 +26,8 @@
         <div class="elisc_tm_topbar">
             <div class="topbar_inner">
                 <div class="logo" data-type="image">
-                    <a class="image" href="#"><img src="{{asset('frontEnd')}}/img/logo/logo.png" alt /></a>
-                    <a class="text" href="#"><span>R.Elisc</span></a>
+                    <a class="image" href="#"><img src="{{asset('personal_image/hero.webp')}}" alt /></a>
+                    <a class="text" href="#"><span>Durjay Ghosh</span></a>
                 </div>
                 <div class="trigger">
                     <div class="hamburger hamburger--slider">
@@ -41,7 +42,7 @@
             <div class="inner">
                 <div class="wrapper">
                     <div class="avatar">
-                        <div class="image" data-img-url="{{asset('frontEnd')}}/img/about/1.jpg"></div>
+                        <div class="image" data-img-url="{{asset('personal_image/hero.webp')}}"></div>
                     </div>
                     <div class="menu_list">
                         <ul class="anchor_nav">
@@ -84,40 +85,41 @@
                             <div class="details">
                                 <div class="left">
                                     <div class="title">
-                                        <h3>Hi, I'm <span class="blueColor">Elisc!</span></h3>
+                                        <h3>Hi, I'm <span class="blueColor">Durjay!</span></h3>
                                         <h3>
                                             <span class="cd-headline rotate-1">
-                                            <span class="blc">Creative</span>
+                                            <span class="blc">Web Developer</span>
                                             <span class="cd-words-wrapper">
-                                            <b class="is-visible">Designer</b>
-                                            <b>Coder</b>
-                                            <b>Player</b>
+                                            <b class="is-visible">Laravel Developer</b>
+                                            <b>Codeigniter</b>
+                                            <b>PHP, Mysqli</b>
+                                            <b>React Js</b>
                                             </span>
                                             </span>
                                         </h3>
-                                        <h3>Based in Florida</h3>
+                                        <h3>Based in Bangladesh</h3>
                                     </div>
                                     <div class="subtitle">
-                                        <p>I'm a Florida based web designer &amp; front‑end developer with <span class="blueColor">10+ years</span> of experience</p>
+                                        <p>I'm a Bangladesh based web Developer &amp; back‑end developer with <span class="blueColor">4+ Years</span> of experience</p>
                                     </div>
                                     <div class="buttons">
                                         <div class="elisc_tm_button">
-                                            <a class="anchor" href="#portfolio">Got a project?</a>
+                                            <a class="anchor" href="https://www.fiverr.com/durjaygp" target="_blank">Got a project?</a>
                                         </div>
                                         <div class="elisc_tm_button" data-style="border">
-                                            <a class="anchor" href="#contact">Let's talk</a>
+                                            <a class="anchor" href="https://www.fiverr.com/durjaygp" target="_blank">Let's talk</a>
                                         </div>
                                     </div>
                                     <div class="info">
                                         <ul>
-                                            <li><a href="tel:+77 022 444 05 05">+77 022 444 05 05</a></li>
-                                            <li><a href="https://marketifythemes.net/cdn-cgi/l/email-protection#a1d2d4d1d1ced3d5e1c4cdc8d2c28fc2cecc"><span class="__cf_email__" data-cfemail="cebdbbbebea1bcba8eaba2a7bdade0ada1a3">[email&#160;protected]</span></a></li>
-                                            <li><a class="href_location" href="#">Ave Street Avenue, New York</a></li>
+                                            <li><a href="tel:+88 01721 620 655">+88 01721 620 655</a></li>
+                                            <li><a href="durjayghosh100@gmail.com"><span class="__cf_email__" data-cfemail="durjayghosh100@gmail.com">durjayghosh100@gmail.com</span></a></li>
+                                            <li><a class="href_location" href="#">Bogura, Bangladesh</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <img src="{{asset('frontEnd')}}/img/about/2.png" alt />
+                                    <img src="{{asset('personal_image/hero.webp')}}" alt />
                                 </div>
                             </div>
                         </div>
@@ -132,7 +134,7 @@
                                 <div class="left">
                                     <div class="title">
                                         <span class="mini">- Nice to meet you!</span>
-                                        <h3 class="name">Robert Elisc</h3>
+                                        <h3 class="name">Durjay Ghosh</h3>
                                         <span class="job">
 <span class="cd-headline rotate-1">
 <span class="blc">Web designer &amp;</span>
@@ -150,7 +152,7 @@
                                 </div>
                                 <div class="right">
                                     <div class="text">
-                                        <p>Hello there! My name is <span class="yellowColor">Robert Elisc</span>. I am a web designer &amp; developer, and I'm very passionate and dedicated to my work.</p>
+                                        <p>Hello there! My name is <span class="yellowColor">Durjay Ghosh</span>. I am a web designer &amp; developer, and I'm very passionate and dedicated to my work.</p>
                                         <p>With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
                                     </div>
                                     <div class="info">
@@ -161,15 +163,15 @@
                                             </li>
                                             <li>
                                                 <span>Born In</span>
-                                                <span><a class="href_location" href="#">Florida, USA</a></span>
+                                                <span><a class="href_location" href="#">Bogura, Bangladesh</a></span>
                                             </li>
                                             <li>
                                                 <span>Mail</span>
-                                                <span><a href="https://marketifythemes.net/cdn-cgi/l/email-protection#86f5f3f6f6e9f4f2c6e3eaeff5e5a8e5e9eb"><span class="__cf_email__" data-cfemail="384b4d4848574a4c785d54514b5b165b5755">[email&#160;protected]</span></a></span>
+                                                <span><a href="durjayghosh100@gmail.com"><span class="__cf_email__" data-cfemail="durjayghosh100@gmail.com">durjayghosh100@gmail.com</span></a></span>
                                             </li>
                                             <li>
                                                 <span>Phone</span>
-                                                <span><a href="tel:+77 022 444 05 05">+77 022 444 05 05</a></span>
+                                                <span><a href="tel:+88 017 216 20 655">+88 01721 620 655</a></span>
                                             </li>
                                         </ul>
                                     </div>

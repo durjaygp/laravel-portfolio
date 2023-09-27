@@ -3,10 +3,11 @@
         <div class="author">
             <div class="image">
                 <img src="{{asset('frontEnd')}}/img/thumbs/1-1.jpg" alt />
-                <div class="main" data-img-url="{{asset('frontEnd')}}/img/about/1.jpg"></div>
+                <div class="main" data-img-url="{{asset('personal_image/hero.webp')}}"></div>
+
             </div>
             <div class="name">
-                <h3><span>Robert Elisc<span class="back">Robert Elisc</span></span></h3>
+                <h3><span>Durjay Ghosh<span class="back">Durjay Ghosh</span></span></h3>
             </div>
         </div>
         <div class="menu scrollable">
