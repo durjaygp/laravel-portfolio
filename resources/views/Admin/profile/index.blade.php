@@ -51,27 +51,26 @@
                                                         data-bs-target="#aboutme" type="button" role="tab"
                                                         aria-controls="home" aria-selected="true" href="#aboutme">About</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                                        data-bs-target="#user-activities" type="button" role="tab"
-                                                        aria-controls="home" aria-selected="true"
-                                                        href="#user-activities">Activities</a></li>
+{{--                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"--}}
+{{--                                                        data-bs-target="#user-activities" type="button" role="tab"--}}
+{{--                                                        aria-controls="home" aria-selected="true"--}}
+{{--                                                        href="#user-activities">Activities</a></li>--}}
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                                         data-bs-target="#edit-profile" type="button" role="tab"
                                                         aria-controls="home" aria-selected="true"
                                                         href="#edit-profile">Settings</a></li>
-                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                                        data-bs-target="#projects" type="button" role="tab"
-                                                        aria-controls="home" aria-selected="true"
-                                                        href="#projects">Projects</a></li>
+{{--                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"--}}
+{{--                                                        data-bs-target="#projects" type="button" role="tab"--}}
+{{--                                                        aria-controls="home" aria-selected="true"--}}
+{{--                                                        href="#projects">Projects</a></li>--}}
                             </ul>
 
                             <div class="tab-content m-0 p-4">
                                 <div class="tab-pane active" id="aboutme" role="tabpanel"
                                      aria-labelledby="home-tab" tabindex="0">
                                     <div class="profile-desk">
-                                        <h5 class="text-uppercase fs-17 text-dark">Johnathan Deo</h5>
-                                        <div class="designation mb-4">PRODUCT DESIGNER (UX / UI / Visual
-                                            Interaction)</div>
+                                        <h5 class="text-uppercase fs-17 text-dark">{{$row->name}}</h5>
+                                        <div class="designation mb-4">{{$row->title}}</div>
                                         <p class="text-muted fs-16">
                                             I have 10 years of experience designing for the web, and
                                             specialize
@@ -120,128 +119,82 @@
                                     </div> <!-- end profile-desk -->
                                 </div> <!-- about-me -->
 
-                                <!-- Activities -->
-                                <div id="user-activities" class="tab-pane">
-                                    <div class="timeline-2">
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">5 minutes ago</div>
-                                                <p><strong><a href="#" class="text-info">John
-                                                            Doe</a></strong>Uploaded a photo</p>
-                                                <img src="{{asset('backEnd')}}/assets/images/small/small-3.jpg" alt=""
-                                                     height="40" width="60" class="rounded-1">
-                                                <img src="{{asset('backEnd')}}/assets/images/small/small-4.jpg" alt=""
-                                                     height="40" width="60" class="rounded-1">
-                                            </div>
-                                        </div>
-
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">30 minutes ago</div>
-                                                <p><a href="#" class="text-info">Lorem</a> commented your
-                                                    post.
-                                                </p>
-                                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit.
-                                                        Aliquam laoreet tellus ut tincidunt euismod. "</em>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">59 minutes ago</div>
-                                                <p><a href="#" class="text-info">Jessi</a> attended a meeting
-                                                    with<a href="#" class="text-success">John Doe</a>.</p>
-                                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit.
-                                                        Aliquam laoreet tellus ut tincidunt euismod. "</em>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">5 minutes ago</div>
-                                                <p><strong><a href="#" class="text-info">John
-                                                            Doe</a></strong> Uploaded 2 new photos</p>
-                                                <img src="{{asset('backEnd')}}/assets/images/small/small-2.jpg" alt=""
-                                                     height="40" width="60" class="rounded-1">
-                                                <img src="{{asset('backEnd')}}/assets/images/small/small-1.jpg" alt=""
-                                                     height="40" width="60" class="rounded-1">
-                                            </div>
-                                        </div>
-
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">30 minutes ago</div>
-                                                <p><a href="#" class="text-info">Lorem</a> commented your
-                                                    post.
-                                                </p>
-                                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit.
-                                                        Aliquam laoreet tellus ut tincidunt euismod. "</em>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="time-item">
-                                            <div class="item-info ms-3 mb-3">
-                                                <div class="text-muted">59 minutes ago</div>
-                                                <p><a href="#" class="text-info">Jessi</a> attended a meeting
-                                                    with<a href="#" class="text-success">John Doe</a>.</p>
-                                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit.
-                                                        Aliquam laoreet tellus ut tincidunt euismod. "</em>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <!-- settings -->
                                 <div id="edit-profile" class="tab-pane">
                                     <div class="user-profile-content">
-                                        <form>
+                                        <form action="{{route('about.save')}}" method="post">
+                                            @csrf
                                             <div class="row row-cols-sm-2 row-cols-1">
                                                 <div class="mb-2">
                                                     <label class="form-label" for="FullName">Full
                                                         Name</label>
-                                                    <input type="text" value="John Doe" id="FullName"
-                                                           class="form-control">
+                                                    <input type="text" value="{{$row->name}}" id="FullName"
+                                                           class="form-control" name="name">
+                                                    <input type="hidden" name="id" value="{{$row->id}}">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label" for="Email">Email</label>
-                                                    <input type="email" value="first.last@example.com"
-                                                           id="Email" class="form-control">
+                                                    <input type="email" value="{{$row->email}}"
+                                                           id="Email" class="form-control" name="email">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="web-url">Website</label>
-                                                    <input type="text" value="Enter website url"
-                                                           id="web-url" class="form-control">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label"
-                                                           for="Username">Username</label>
-                                                    <input type="text" value="john" id="Username"
-                                                           class="form-control">
+                                                    <label class="form-label" for="web-url">age</label>
+                                                    <input type="text" value="{{$row->age}}"
+                                                           id="web-url" class="form-control" name="age">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label"
-                                                           for="Password">Password</label>
-                                                    <input type="password" placeholder="6 - 15 Characters"
-                                                           id="Password" class="form-control">
+                                                           for="Password">Phone</label>
+                                                    <input type="tel" placeholder="01721620655"
+                                                           id="Password" class="form-control" value="{{$row->phone}}" name="phone">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label"
-                                                           for="RePassword">Re-Password</label>
-                                                    <input type="password" placeholder="6 - 15 Characters"
-                                                           id="RePassword" class="form-control">
+                                                           for="RePassword">location</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="location" value="{{$row->location}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">experience_year</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="experience_year" value="{{$row->experience_year}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">project_completed</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="project_completed" value="{{$row->project_completed}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">clients</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="clients" value="{{$row->clients}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">intro_video</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="intro_video" value="{{$row->intro_video}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">map_link</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="map_link" value="{{$row->map_link}}">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label"
+                                                           for="RePassword">copyright_text</label>
+                                                    <input type="text" placeholder="location"
+                                                           id="RePassword" class="form-control" name="copyright_text" value="{{$row->copyright_text}}">
                                                 </div>
                                                 <div class="col-sm-12 mb-3">
                                                     <label class="form-label" for="AboutMe">About Me</label>
-                                                    <textarea style="height: 125px;" id="AboutMe"
-                                                              class="form-control">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</textarea>
+                                                    <textarea style="height: 125px;" name="description" id="AboutMe"
+                                                              class="form-control">{{$row->description}}</textarea>
                                                 </div>
                                             </div>
                                             <button class="btn btn-primary" type="submit"><i
@@ -250,76 +203,6 @@
                                     </div>
                                 </div>
 
-                                <!-- profile -->
-                                <div id="projects" class="tab-pane">
-                                    <div class="row m-t-10">
-                                        <div class="col-md-12">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered mb-0">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Project Name</th>
-                                                        <th>Start Date</th>
-                                                        <th>Due Date</th>
-                                                        <th>Status</th>
-                                                        <th>Assign</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Velonic Admin</td>
-                                                        <td>01/01/2015</td>
-                                                        <td>07/05/2015</td>
-                                                        <td><span class="badge bg-info">Work
-                                                                                in Progress</span></td>
-                                                        <td>Techzaa</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Velonic Frontend</td>
-                                                        <td>01/01/2015</td>
-                                                        <td>07/05/2015</td>
-                                                        <td><span
-                                                                class="badge bg-success">Pending</span>
-                                                        </td>
-                                                        <td>Techzaa</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Velonic Admin</td>
-                                                        <td>01/01/2015</td>
-                                                        <td>07/05/2015</td>
-                                                        <td><span class="badge bg-pink">Done</span>
-                                                        </td>
-                                                        <td>Techzaa</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Velonic Frontend</td>
-                                                        <td>01/01/2015</td>
-                                                        <td>07/05/2015</td>
-                                                        <td><span class="badge bg-purple">Work
-                                                                                in Progress</span></td>
-                                                        <td>Techzaa</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Velonic Admin</td>
-                                                        <td>01/01/2015</td>
-                                                        <td>07/05/2015</td>
-                                                        <td><span class="badge bg-warning">Coming
-                                                                                soon</span></td>
-                                                        <td>Techzaa</td>
-                                                    </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -24,6 +24,9 @@ Route::middleware('auth')->group(function () {
 
     //==========About Me===========
     Route::get('/dashboard/profile', [AboutController::class, 'about'])->name('dashboard.profile');
+    Route::post('/dashboard/profile/save', [AboutController::class, 'saveAbout'])->name('about.save');
+
+
 
 
 
